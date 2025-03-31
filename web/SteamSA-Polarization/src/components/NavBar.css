@@ -25,8 +25,29 @@
     bottom: 0;
     margin: auto;
     border-left: 1px solid black;
-    transition: width 0.3s ease-in-out; /* Agregamos la transición */
 }
+
+
+.navbar > a{
+
+    width: 5%;
+    position: absolute;
+    top: 0;
+    left: 1%;
+    bottom: 0;
+    margin: auto;
+
+}
+
+.navbar > a > img{
+
+    width: 100%;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+}
+
+
 
 .barra_busqueda > input{
     height: 30%;

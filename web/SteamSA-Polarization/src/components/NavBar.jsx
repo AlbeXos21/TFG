@@ -5,7 +5,9 @@ import "./NavBar.css"
 function NavBar({ onFocus, onBlur, valor, onChange}) {
   return (
     <div className="navbar">
+        <a href="../"><img src="../Logo_TFG_inicio.png" alt="" /></a>
       <div className="barra_busqueda">
+
         <input 
           type="text"
           value={valor} // Recibe el valor desde las props
