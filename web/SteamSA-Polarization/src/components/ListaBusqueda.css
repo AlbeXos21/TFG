@@ -1,0 +1,105 @@
+.ul_lista_busqueda {
+    width: 26.5%;
+    height: auto;
+    margin: 0;
+    margin-top: 0.6%;
+    position: absolute;
+    right: 1.5%;
+    list-style: none;
+    padding: 0;
+    display: flex; /* Usamos flexbox para el contenedor */
+    flex-direction: column; /* Esto asegura que los elementos se acomoden verticalmente */
+    z-index: 4;
+}
+.ul_lista_busqueda li {
+    width: 100%;
+    height: 85px; /* Permitimos que la altura sea automática */
+    display: grid;
+    grid-template-columns: 0.15fr 0.7fr 0.15fr;
+    transition: opacity 0.05s;
+}
+
+
+.ul_lista_busqueda a{
+    flex-grow: 1;
+    background-color: rgb(212, 212, 212);
+    border-bottom: 2px solid black;
+    z-index: 4;
+}
+
+
+.ul_lista_busqueda li > * {
+
+    width: 100%;
+    border: 1px solid black;
+    border-bottom: none;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.container_imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.container_imagen > img{
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+
+
+li p{
+margin: 0;
+display: flex;
+justify-content: left;
+align-items: center;
+color: black;
+padding: 0;
+padding-left: 2%;
+font-size: 1.3vw;
+width: 100%;
+height: 100%;
+
+}
+
+
+
+.container_nota{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container_nota > p{
+    width: 85%;
+    height: 85%;
+    background-color: aqua;
+    border-radius: 5px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 1.75vw;
+
+}
+
+
+
+.ul_lista_busqueda a:hover {
+background-color: rgb(28, 150, 180);
+}
+.ul_lista_busqueda a:hover p  {
+    color: white;
+    }
+
+
+
+
+

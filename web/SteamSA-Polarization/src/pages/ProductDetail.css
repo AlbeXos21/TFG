@@ -1,0 +1,154 @@
+.contenedor_tarjetero{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(24,59,82,1);
+    position: relative;
+    background-size: cover;
+}
+
+
+.contenedor_estadisticas{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    position: relative;
+    grid-template-rows: 0.2fr 0.70fr ;
+}
+
+.contenedor_estadisticas h1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12vh;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+    background-color: rgba(19, 111, 139, 0.76);
+    box-sizing: border-box;
+}
+
+.contenedor_estadisticas > h1{
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+}
+
+.contenedor_graficos{
+    width: 90%;
+    height: 90%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: auto auto;
+}
+
+.contenedor_TF_IDF_BM25{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    margin: 77px auto ;
+    grid-template-rows: 0.15fr 0.85fr;
+}
+
+
+
+.contenedor_TF_IDF_BM25 h1{
+    border: 3px solid black;
+    width: 100%;
+    height: 100%;
+    font-size: 60px;
+    }
+
+    .contenedor_TF_IDF_BM25 div {
+        width: 100%;
+        height: 100%;
+        border-bottom: 3px solid black;
+        border-right: 3px solid black;
+        border-left: 3px solid black;
+        position: relative; /* Asegura que los elementos dentro se posicionen en relación con este contenedor */
+        box-sizing: border-box;
+    }
+    
+    .contenedor_TF_IDF_BM25 div img {
+        width: 95%;      /* Hace que la imagen ocupe todo el ancho del contenedor */
+        height: 95%;     /* Hace que la imagen ocupe todo el alto del contenedor */
+        object-fit: contain; /* Esto asegura que la imagen cubra completamente el espacio del contenedor */
+        position: absolute;
+        margin: auto;
+        inset: 0;
+    }
+    .contenedor_TF_IDF_BM25 div button{
+        width: 17%;      /* Hace que la imagen ocupe todo el ancho del contenedor */
+        height: 7%;     /* Hace que la imagen ocupe todo el alto del contenedor */
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1vw;
+        white-space: nowrap;
+        margin: auto;
+        right: 1%;
+        top: 1%;
+    }
+
+
+    .contenedor_graficos_criterios{
+    width: 80%;
+    height: 90%;
+    margin: 0 auto;
+    padding-top: 8.5%;
+    position: relative;
+    }
+
+
+    .contenedor_graficos_criterios > img{
+        width: 70%;
+        height: 100%;
+        object-fit:cover;
+        position: absolute;
+        margin: auto;
+        inset: 0;
+        
+    }
+
+    @keyframes loading {
+        0% {
+          left: -100%;
+        }
+      
+        100% {
+          left: 100%;
+        }
+      }
+      
+      .wrapper {
+        position: absolute;
+        color: white;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        inset: 0;
+        margin: auto;
+        display: flex;               
+        justify-content: center;     
+        align-items: center;  
+        font-size: 5vw;       
+      }
+      
+      .space {
+        position: relative;
+        border: 3px solid white;
+        width: 20%;
+        height: 5%;
+        border: 4px solid black;
+        overflow: hidden;
+      }
+      
+      .loading {
+        position: absolute;
+        background-color: rgba(99, 209, 243, 0.85);
+        width: 100%;
+        height: 100%;
+       
+        animation: loading 5s steps(40) infinite;
+      }

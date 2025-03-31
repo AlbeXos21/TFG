@@ -1,0 +1,141 @@
+
+
+
+.texto_carga{
+    position: absolute;
+    color: white;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    margin: auto;
+    display: flex;               
+    justify-content: center;     
+    align-items: center;  
+    font-size: 5vw;       
+}
+
+
+
+
+
+  .contenedor_inicio{
+    position: relative;
+    background-color: rgba(186,187,187,1);
+    background-size: cover;
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    width: 100%;
+    height: 100%;
+  }
+
+  .contenedor_imagen{
+    background-color: transparent;
+    width: auto;
+    height: 50%;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    left: 50%;
+    bottom: 17%;
+    margin: auto;
+    aspect-ratio: 4/2.5;
+    transition: height 0.3s;
+  }
+
+  .contenedor_imagen > a {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .contenedor_imagen > a > img {
+    width: 67%;
+    height: auto;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .contenedor_imagen > a > img:hover {
+    transform: scale(1.05); 
+  }
+
+  .contenedor_texto{
+    width: auto;
+    height: 30%;
+    position: absolute;
+    right: 3%;
+    top: 50%;
+    bottom: 0;
+    margin: auto;
+    aspect-ratio: 2.5/1;
+    display: grid;
+    grid-template-rows: 1.2fr 1.2fr 2fr;
+  }
+
+  .contenedor_texto > div {
+    width: 90%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .contenedor_texto > div > p {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: auto;
+    font-size: 3.3rem;
+    padding-left: 10%;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+  }
+
+  .contenedor_recomendados2{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(147, 221, 245, 0.185);
+    display: grid;
+    grid-template-rows: 0.25fr 1fr;
+  }
+
+  .contenedor_recomendados2 h1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12vh;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+    background-color: rgba(19, 111, 139, 0.76);
+  }
+
+  .contenedor_recomendados2 > div:nth-child(2){
+    background-color: red;
+  }
+
+  .lista_contenedor{
+    width: 90%;
+    height: 100%;
+    padding: 0;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+  }
+
+  .lista_contenedor li{
+    width: 100%;
+    height: 65%;
+    display: flex;
+  }
+
+  .navbar:hover + .ul_lista_busqueda{
+    transform: translateY(1%);
+  }
+
+

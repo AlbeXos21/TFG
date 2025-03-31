@@ -1,0 +1,116 @@
+.carta_titulo{
+    width: 100%;
+    height: 100%;
+    border: 3.5px solid black;
+    background-color: white;
+    border-radius: 30px;
+    display: grid;
+    grid-template-rows: 0.35fr 0.90fr 0.35fr;
+    transition: transform 0.3s ease-in-out;
+}
+.carta_titulo:hover{
+    transform: scale(1.03);
+}
+
+.carta_titulo .imagen_titulo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+
+.carta_titulo .imagen_titulo img{
+    width: 100%;
+    height: 100%;
+    display: inherit;
+    justify-content: center;
+    border-radius: 25px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px; 
+}
+
+.carta_titulo > div:first-child{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(24, 149, 187, 0.76);
+    border-radius: inherit;
+}
+
+.info_titulo{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 2.1fr;
+    border-bottom: 2px dashed black;
+}
+
+.info_titulo > .titulo{
+    font-size: 1.2vw;
+    width: 100%;
+    height: 100%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Agrega sombra para suavizar el borde */
+    border-bottom: 2px dashed black;
+    padding: 0;
+
+}
+
+.info_titulo .puntuacion{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 0.65fr;
+}
+
+.info_titulo .puntuacion p{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+a{
+    z-index: 3;
+}
+.contenedor_nota{
+    width: 55%;
+    height: 62.5%;
+    border: 3px solid black;
+    border-radius: 10px;
+    display: flex;
+ 
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: auto;
+    margin-left: 30%;
+}
+.puntuacion .nota{
+    color: black;
+    font-size: 2.3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Agrega sombra para suavizar el borde */
+
+}
+
+.contenedor_reseñas{
+    display: grid;
+    grid-template-rows: auto auto;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor_reseñas div{
+    display: flex;
+    justify-content: left;
+    padding-left: 2%;
+    align-items: center;
+    color: black;
+    font-size: 1.4vw ;
+}

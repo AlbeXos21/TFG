@@ -1,0 +1,131 @@
+.tarjetero_producto{
+    background-color: transparent;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 62.5%;
+    height: 65%;
+    border: rgb(129, 129, 129) solid 2px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 67% auto;
+}
+
+.tarjetero_producto *{
+
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.tarjetero_producto_video{
+    display: grid;
+    grid-template-rows: 2.5fr 1fr;
+    
+}
+
+video{
+    width: 100%;          
+    height: 100%;       
+    object-fit: cover; 
+    border-top-left-radius: 20px;
+    border-bottom: rgb(129, 129, 129) solid 2px;
+    aspect-ratio: 16/9;
+}
+
+
+.tarjetero_producto_info{
+    display: grid;
+    grid-template-rows: 28% 42% 30%;
+    border-left: rgb(129, 129, 129) solid 2px;
+}
+.tarjetero_producto_info > :first-child{
+    border-bottom: rgb(129, 129, 129) solid 2px;
+}
+.tarjetero_producto_info > :nth-child(2){
+    border-bottom: rgb(129, 129, 129) solid 2px;
+    font-size: 0.85em;
+    padding-left: 1%;
+}
+.tarjetero_producto_info > img{
+    border-top-right-radius: 20px;
+}
+
+
+.contenedor_datos{
+    display: grid;
+    grid-template-columns: 20% auto;
+}
+
+.contenedor_datos > :nth-child(2){
+    border-left: rgb(129, 129, 129) solid 2px;
+}
+.nota_tarjetero{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    margin: auto;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.3vw;
+    background-color: rgb(8, 184, 184);
+    color:rgb(0, 0, 0);
+    border: 3px solid rgb(0, 0, 0);
+    
+}
+
+.resenas_contador{
+    display: grid;
+    grid-template-rows: auto;
+    width: 100%;
+    height: 100%;
+    box-sizing:border-box;
+}
+
+
+.resenas_contador > :first-child{
+    border-bottom: rgb(129, 129, 129) solid 1px;
+}
+
+.resenas_contador > :nth-child(2){
+    border-top: rgb(129, 129, 129) solid 1px;
+}
+
+.resenas_contador div{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 0;
+    padding-left: 2.5%;
+    font-size: 3vw;
+    box-sizing: border-box;
+
+}
+
+.generos{
+    display: grid;
+    grid-template-rows: auto auto ;
+    grid-template-columns: repeat(3, 1fr);
+    box-sizing:content-box;
+
+}
+
+.generos div {
+    display: flex; /* Usa flexbox para manejar el contenido dentro de cada div */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Evita que las imágenes se desborden */
+    border: rgb(129, 129, 129) solid 1px;
+}
+.generos  :last-child {
+    border-bottom-right-radius: 18px;
+}
+
+
+.generos img {
+    width: 62%;
+    height: auto;
+    object-fit: contain; /* Asegura que la imagen se ajuste sin distorsionarse */
+
+}

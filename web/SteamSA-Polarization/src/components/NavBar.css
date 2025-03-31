@@ -1,0 +1,53 @@
+.navbar{
+    width: 100%;
+    height: 9%;
+    background-color: transparent;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7); /* Sombra */
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: height 0.3s ease-in-out;
+}
+
+
+.navbar:hover{
+    height: 10%;
+}
+
+
+.barra_busqueda{
+    height: 100%;
+    width: 28%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-left: 1px solid black;
+    transition: width 0.3s ease-in-out; /* Agregamos la transición */
+}
+
+.barra_busqueda > input{
+    height: 30%;
+    border-radius: 30px;
+    border: 2px solid rgb(145, 145, 145) ;
+    width: 67%;
+    position: absolute;
+    inset: 0;
+    background-color: white;
+    color: black;
+    margin: auto;
+    font-size: 1.2vw;
+    transition: right 0.3 ease-in-out;
+    padding-left: 2%;
+}
+
+.navbar:hover .barra_busqueda > input{
+    border: 3px solid rgba(19, 111, 139, 0.76);
+}
+
+
+
+
+
